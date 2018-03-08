@@ -4134,5 +4134,135 @@
             "testing",
             "xunit"
         ]
+    },
+    {
+        "name": "symfony/dom-crawler",
+        "version": "v3.4.6",
+        "version_normalized": "3.4.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/dom-crawler.git",
+            "reference": "2bb5d3101cc01f4fe580e536daf4f1959bc2d24d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/symfony/dom-crawler/2bb5d3101cc01f4fe580e536daf4f1959bc2d24d.zip",
+            "reference": "2bb5d3101cc01f4fe580e536daf4f1959bc2d24d",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9|>=7.0.8",
+            "symfony/polyfill-mbstring": "~1.0"
+        },
+        "require-dev": {
+            "symfony/css-selector": "~2.8|~3.0|~4.0"
+        },
+        "suggest": {
+            "symfony/css-selector": ""
+        },
+        "time": "2018-02-22T10:48:49+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\DomCrawler\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony DomCrawler Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "lambq/laravel-admin",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/lambq/laravel-admin.git",
+            "reference": "7a3869a5dc3808a6695e3ff9a8420763e1401b9a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/lambq/laravel-admin/7a3869a5dc3808a6695e3ff9a8420763e1401b9a.zip",
+            "reference": "7a3869a5dc3808a6695e3ff9a8420763e1401b9a",
+            "shasum": ""
+        },
+        "require": {
+            "laravel/framework": "~5.5",
+            "php": ">=7.0.0",
+            "symfony/dom-crawler": "~3.1"
+        },
+        "require-dev": {
+            "fzaninotto/faker": "~1.4",
+            "intervention/image": "~2.3",
+            "laravel/browser-kit-testing": "^2.0",
+            "laravel/laravel": "~5.5",
+            "phpunit/phpunit": "~6.0",
+            "symfony/css-selector": "~3.1"
+        },
+        "suggest": {
+            "intervention/image": "Required to handling and manipulation upload images (~2.3).",
+            "spatie/eloquent-sortable": "Required to built orderable gird."
+        },
+        "time": "2018-03-07T07:25:36+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Lambq\\Admin\\AdminServiceProvider"
+                ],
+                "aliases": {
+                    "Admin": "Lambq\\Admin\\Facades\\Admin"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Lambq\\Admin\\": "src/"
+            },
+            "files": [
+                "src/helpers.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "lambq",
+                "email": "415113157@qq.com"
+            }
+        ],
+        "description": "laravel admin",
+        "homepage": "https://github.com/lambq/laravel-admin",
+        "keywords": [
+            "admin",
+            "form",
+            "grid",
+            "laravel"
+        ]
     }
 ]
