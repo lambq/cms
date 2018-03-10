@@ -55,6 +55,7 @@ class ComposerStaticInitcaef09078a6347758df3a9447f2934db
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Spatie\\PaginateRoute\\' => 21,
         ),
         'R' => 
         array (
@@ -200,6 +201,10 @@ class ComposerStaticInitcaef09078a6347758df3a9447f2934db
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'Spatie\\PaginateRoute\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-paginateroute/src',
+        ),
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
@@ -309,6 +314,13 @@ class ComposerStaticInitcaef09078a6347758df3a9447f2934db
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
             ),
         ),
+        'L' => 
+        array (
+            'Lavary\\Menu\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/lavary/laravel-menu/src',
+            ),
+        ),
         'J' => 
         array (
             'JakubOnderka\\PhpConsoleHighlighter' => 
@@ -330,6 +342,8 @@ class ComposerStaticInitcaef09078a6347758df3a9447f2934db
     );
 
     public static $classMap = array (
+        'App\\Admin\\Controllers\\ExampleController' => __DIR__ . '/../..' . '/app/Admin/Controllers/ExampleController.php',
+        'App\\Admin\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Admin/Controllers/HomeController.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -337,8 +351,10 @@ class ComposerStaticInitcaef09078a6347758df3a9447f2934db
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
+        'App\\Http\\Middleware\\GenerateMenus' => __DIR__ . '/../..' . '/app/Http/Middleware/GenerateMenus.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
@@ -1918,6 +1934,13 @@ class ComposerStaticInitcaef09078a6347758df3a9447f2934db
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
         'Laravel\\Tinker\\TinkerServiceProvider' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerServiceProvider.php',
+        'Lavary\\Menu\\Builder' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/Builder.php',
+        'Lavary\\Menu\\Collection' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/Collection.php',
+        'Lavary\\Menu\\Facade' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/Facade.php',
+        'Lavary\\Menu\\Item' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/Item.php',
+        'Lavary\\Menu\\Link' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/Link.php',
+        'Lavary\\Menu\\Menu' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/Menu.php',
+        'Lavary\\Menu\\ServiceProvider' => __DIR__ . '/..' . '/lavary/laravel-menu/src/Lavary/Menu/ServiceProvider.php',
         'League\\Flysystem\\AdapterInterface' => __DIR__ . '/..' . '/league/flysystem/src/AdapterInterface.php',
         'League\\Flysystem\\Adapter\\AbstractAdapter' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/AbstractAdapter.php',
         'League\\Flysystem\\Adapter\\AbstractFtpAdapter' => __DIR__ . '/..' . '/league/flysystem/src/Adapter/AbstractFtpAdapter.php',
@@ -3133,6 +3156,10 @@ class ComposerStaticInitcaef09078a6347758df3a9447f2934db
         'SebastianBergmann\\Timer\\RuntimeException' => __DIR__ . '/..' . '/phpunit/php-timer/src/RuntimeException.php',
         'SebastianBergmann\\Timer\\Timer' => __DIR__ . '/..' . '/phpunit/php-timer/src/Timer.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Spatie\\PaginateRoute\\PaginateRoute' => __DIR__ . '/..' . '/spatie/laravel-paginateroute/src/PaginateRoute.php',
+        'Spatie\\PaginateRoute\\PaginateRouteFacade' => __DIR__ . '/..' . '/spatie/laravel-paginateroute/src/PaginateRouteFacade.php',
+        'Spatie\\PaginateRoute\\PaginateRouteServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-paginateroute/src/PaginateRouteServiceProvider.php',
+        'Spatie\\PaginateRoute\\SetPageMiddleware' => __DIR__ . '/..' . '/spatie/laravel-paginateroute/src/SetPageMiddleware.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\CommandLoader\\CommandLoaderInterface' => __DIR__ . '/..' . '/symfony/console/CommandLoader/CommandLoaderInterface.php',
         'Symfony\\Component\\Console\\CommandLoader\\ContainerCommandLoader' => __DIR__ . '/..' . '/symfony/console/CommandLoader/ContainerCommandLoader.php',
