@@ -18,4 +18,4 @@
  *
  */
 
-Lambq\Admin\Form::forget(['map', 'editor']);
+Lambq\Admin\Form::forget(['map']);
