@@ -25,7 +25,65 @@ class MenuController extends Controller
             $content->description('列表');
 
             // 填充页面body部分，这里可以填入任何可被渲染的对象
-            $content->body(menu::tree());
+            $content->body($this->tree());
+        });
+    }
+
+    public function tree()
+    {
+        return menu::tree(function ($tree){
+            $tree->branch(function ($branch){
+                switch ($branch['module'])
+                {
+                    case 1:
+                        $module = '简介模块';
+                        break;
+                    case 2:
+                        $module = '新闻模块';
+                        break;
+                    case 3:
+                        $module = '产品模块';
+                        break;
+                    case 4:
+                        $module = '下载模块';
+                        break;
+                    case 5:
+                        $module = '图片模块';
+                        break;
+                    case 6:
+                        $module = '招聘模块';
+                        break;
+                    case 7:
+                        $module = '留言系统';
+                        break;
+                    case 8:
+                        $module = '反馈系统';
+                        break;
+                    case 9:
+                        $module = '友情链接';
+                        break;
+                    case 10:
+                        $module = '会员中心';
+                        break;
+                    case 11:
+                        $module = '全站搜索';
+                        break;
+                    case 12:
+                        $module = '网站地图';
+                        break;
+                    case 100:
+                        $module = '产品列表';
+                        break;
+                    case 101:
+                        $module = '图片列表';
+                        break;
+                    case 0:
+                        $module = '外部模块';
+                        break;
+                }
+                return "{$branch['id']} - {$branch['title']} - {$branch['name']} - {$module}";
+            });
+            $tree->disableSave();
         });
     }
 

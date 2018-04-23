@@ -12,5 +12,7 @@ Route::group([
 
     $router->get('/', 'HomeController@index');
     $router->resource('menu', 'MenuController');
+    $router->resource('article', 'ArticleController');
+    $router->resource('module', 'ModuleController');
 
 });
