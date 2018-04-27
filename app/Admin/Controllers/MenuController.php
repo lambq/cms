@@ -4,11 +4,11 @@ namespace App\Admin\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\menu;
+use App\Module;
 use Lambq\Admin\Form;
 use Lambq\Admin\Facades\Admin;
 use Lambq\Admin\Layout\Content;
 use Lambq\Admin\Controllers\ModelForm;
-use Lambq\Admin\Tree;
 
 class MenuController extends Controller
 {
@@ -101,20 +101,7 @@ class MenuController extends Controller
         return menu::form(function (Form $form) {
             $form->display('id', 'ID');
             $form->select('pid', trans('admin.parent_id'))->options(menu::selectOptions());
-            $form->select('module', '所属模块')->options([
-                1 => '简介模块',
-                2 => '新闻模块',
-                3 => '产品模块',
-                4 => '下载模块',
-                5 => '图片模块',
-                6 => '招聘模块',
-                7 => '留言系统',
-                8 => '反馈系统',
-                9 => '友情链接',
-                10 => '会员中心',
-                11 => '全站搜索',
-                12 => '网站地图',
-            ]);
+            $form->select('module', '所属模块')->options(Module::all()->pluck('name', 'id'));
             $form->text('name', '栏目路径')->rules('required');
             $form->text('title', '栏目名称')->rules('required');
             $form->text('keywords', '栏目关键词')->rules('required');

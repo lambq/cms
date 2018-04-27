@@ -20,4 +20,9 @@ class menu extends Model
         $this->setOrderColumn('sort');
         $this->setTitleColumn('name');
     }
+
+    public function modules()
+    {
+        return $this->belongsToMany(Module::class);
+    }
 }

@@ -81,7 +81,7 @@ class AdminTablesSeeder extends Seeder
             [
                 'parent_id' => 0,
                 'order'     => 2,
-                'title'     => '管理',
+                'title'     => '后台管理',
                 'icon'      => 'fa-tasks',
                 'uri'       => '',
             ],

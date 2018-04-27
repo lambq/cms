@@ -12,13 +12,11 @@
 */
 
 Route::get('/', function () {
-    \Menu::make('MyNavBar', function ($menu) {
-        $menu->add('Home');
-        $menu->add('About', 'about');
-        $menu->add('Services', 'services');
-        $menu->add('Contact', 'contact');
-    });
     return view('welcome');
+});
+
+Route::get('about', function(){
+    return 'guan';
 });
 
 Auth::routes();

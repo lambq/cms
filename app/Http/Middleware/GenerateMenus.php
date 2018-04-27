@@ -15,6 +15,12 @@ class GenerateMenus
      */
     public function handle($request, Closure $next)
     {
+        \Menu::make('MyNavBar', function ($menu) {
+            $menus = \App\menu::where('hide',0)->get();
+            foreach ($menus as $v) {
+                $menu->add($v->title,$v->name);
+            }
+        });
         return $next($request);
     }
 }
