@@ -17,6 +17,18 @@ redis
 >   特地说明百度收录效果极佳,尤其是天收录
 >   文章采集库,后续开放,希望各位都成为优秀的架构师
 
+#### nginx伪静态
+
+```shell
+location = / {
+    try_files /page-cache/pc__index__pc.html /index.php?$query_string;
+}
+
+location / {
+    try_files $uri $uri/ /page-cache/$uri.html /page-cache/$uri.json /page-cache/$uri.xml /index.php?$query_string;
+}
+```
+
 #### 安装教程
 
 1. 复制.env.example 文件命名成 .env
